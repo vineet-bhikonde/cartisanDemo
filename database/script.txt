@@ -1,0 +1,15 @@
+create table car_repair (
+	id int not null auto_increment,
+	name varchar(250) default null,
+	email varchar(250) default null,
+	phone varchar(20) default null,
+	model varchar(20) default null,
+	problem varchar(1000) default null,
+	primary key(id)
+);
+
+create table car_image (
+	user_id int not null,
+	imagePath varchar(100) not null,
+	primary key(user_id,imagePath)
+)engine=InnoDB;

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Cartisan Car Care</title>
+</head>
+<body>
+    <div>
+        <div class="row" style="background-color: #0455d8; border-color: #0455d8; height: 100px;">
+                <div class="col-md-3 col-sm-3 col-xs-3" style="padding-top: 30px;  padding-left:25px;">
+                    <img src="./cartisan-full.png" height="50px"> 
+                </div>
+                <div class="col-md-offset-2 col-md-7 col-sm-offset-2 col-sm-7 col-xs-offset-2 col-xs-7" style="color: #fff; padding-top:20px"> 
+                    <h2>Cartisan Car Care</h2>
+                </div>
+        </div>
+        <div class="row" style="background-color: #00ccff; padding-top: 25px; padding-bottom: 25px">
+            <marquee> Welcome to Cartisan Car Care.! Please fill below details for your car service.</marquee>
+        </div>
+        <div class="row" style="background-color: #00ccff; padding-top: 50px; padding-bottom: 77px">
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <form class="form-inline" style="margin-left: 0px" action="rest/carDetails" method="POST" enctype="multipart/form-data">
+                    <div class="row" style="padding-left: 25px;">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <label  for="usr" style="padding: 5px" >User Name:</label>
+                            <input id="usr" name="username" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 25px;">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <label>Phone No:</label>
+                            <input name="phone" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 25px;">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <label>Email:</label>
+                            <input name="email" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 25px;">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <label>Vehicle Model:</label>
+                            <input name="model" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 25px;">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <label>Vehicle Details: </label>
+                            <textarea name="problem" class="form-control" rows="2" cols="22"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 25px;">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <label>Upload: </label>
+                            <input type="file" name="file" class="btn btn-default" multiple="multiple/"></button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 40px; padding-top: 20px">
+                        <input type="Submit" class="btn btn-primary">	
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <img src="./Car-Repairs.png" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- #00ccff  #f0ffff-->
